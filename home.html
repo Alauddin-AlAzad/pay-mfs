@@ -1,11 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    
+    <main class="flex justify-center">
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+                <div class="artboard artboard-demo phone-3">
+                    <!-- avilable ballance -->
+                    <div>
+                        <div class="stats shadow">
+                            <div class="stat">
+
+                                <div class="stat-value">$89400</div>
+                                <div class="stat-desc">Avilable ballance</div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <!-- user action Button -->
+                     <div class="flex flex-row gap-3 lg:w-full w-5/6 lg:justify-center">
+                        <button class="btn btn-lg text-base lg:w-[123px] w-[80px] ">Add Money</button>
+                        <button class="btn btn-lg text-base lg:w-[123px] w-[80px]">Cashout</button>
+                        <button class="btn btn-lg text-base lg:w-[123px] w-[80px] mb-5">Transfer Money</button>
+                     </div>
+                     <!-- <div class="flex flex-row gap-3 lg:w-full w-5/6 lg:justify-center ">
+                        <button class="btn btn-lg text-base lg:w-[123px] w-[80px]">Get Bonus</button>
+                        <button class="btn btn-lg text-base lg:w-[123px] w-[80px]">Pay Bill</button>
+                        <button class="btn btn-lg text-base lg:w-[123px] w-[80px]">Transaction</button>
+                       
+                     </div> -->
+                     <div class="divider"></div>
+                     <!-- from here bro -->
+                      <div>
+                        <form class="card-body bg-white shadow-2xl w-5/6 lg:w-full flex flex-col lg:justify-center rounded-xl">
+                            <div class="form-control">
+                              <label class="label">
+                                <span class="label-text">Amount</span>
+                              </label>
+                              <input type="text" placeholder="Amount" class="input input-bordered" required />
+                            </div>
+                            <div class="form-control">
+                              <label class="label">
+                                <span class="label-text">Pin</span>
+                              </label>
+                              <input type="password" placeholder="4 Digit pin" class="input input-bordered" required />
+                              
+                            </div>
+                            <div class="form-control mt-6">
+                              <button id="btn-money" class="btn btn-primary">Add Money</button>
+                            </div>
+                          </form>
+                      </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    <script src="./js/home.js"></script>
 </body>
+
 </html>

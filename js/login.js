@@ -7,7 +7,7 @@ document.getElementById('btn-login').addEventListener('click',function(event){
     const pinNum=document.getElementById('pin-num').value;
     if(phnNum==='01823869466' && pinNum==='0177')
     {
-        console.log("Login Succesfully");
+        window.location.href='home.html'
     }
     else{
         alert("Invalid Username or Password")
